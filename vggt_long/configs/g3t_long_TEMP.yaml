@@ -1,0 +1,21 @@
+inherit_from: "./vggt_long/configs/base_config.yaml"
+
+Weights:
+  model: 'G3T'
+  G3T: null  # this will be set from inside
+  DBoW: '/home/bn282/pretrained_models/vggt_long/ORBvoc.txt'
+  SALAD: '/home/bn282/pretrained_models/vggt_long/dino_salad.ckpt'
+  DNIO: '/home/bn282/pretrained_models/vggt_long/dinov2_vitb14_pretrain.pth'
+
+Model:
+  chunk_size: 25
+  overlap: 7
+  loop_chunk_size: 3
+  loop_enable: False  # True  # setting to False to disable loop closure for now
+  useDBoW: False
+  delete_temp_files: True
+  align_method: 'numba' # 'numba' or 'numpy', use 'numba' would be faster
+
+  calib: False
+  h: null
+  w: null

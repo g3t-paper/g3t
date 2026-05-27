@@ -1,0 +1,7 @@
+setup.py
+dpretrieval.egg-info/PKG-INFO
+dpretrieval.egg-info/SOURCES.txt
+dpretrieval.egg-info/dependency_links.txt
+dpretrieval.egg-info/not-zip-safe
+dpretrieval.egg-info/requires.txt
+dpretrieval.egg-info/top_level.txt
