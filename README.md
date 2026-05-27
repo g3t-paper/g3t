@@ -104,8 +104,6 @@ python visualize_results.py --scene_root "./output/lounge"
 
 This opens the visualizer at http://localhost:27272 by default. See `visualize_results.py` for additional options.
 
-> **NOTE:** Camera frustum placement in the G3T-Long visualization for the demo data appears to be off, likely due to a bug introduced during code cleanup. The 3D reconstruction however should look correct. We will fix this shortly.
-
 ## Training G3T
 
 > **NOTE:** This section is not complete yet!

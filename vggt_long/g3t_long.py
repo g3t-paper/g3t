@@ -602,13 +602,14 @@ class G3T_Long:
 
         all_g2c_poses = np.stack(all_g2c_poses, axis=0)
         all_g2w_poses = np.stack(all_g2w_poses, axis=0)
+        all_w2g_poses = inv(all_g2w_poses)
         all_intrinsics = np.stack(all_intrinsics, axis=0)
 
-        all_w2c_poses = np.matmul(all_g2c_poses, inv(all_g2w_poses))
+        all_w2c_poses = np.matmul(all_g2c_poses, all_w2g_poses)
         all_c2g_poses = np.zeros_like(all_g2c_poses)
         all_c2g_poses[:, :3, :3] = einops.rearrange(all_g2c_poses[:, :3, :3], "n r c -> n c r")
 
-        return all_intrinsics, all_w2c_poses, all_g2w_poses, all_c2g_poses
+        return all_intrinsics, all_w2c_poses, all_w2g_poses, all_c2g_poses
 
     def close(self):
         '''
