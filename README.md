@@ -1,7 +1,7 @@
 # G3T Up! Gravity Aligned Coordinate Frames Simplify Pointmap Processing 
 
 [![Project Page](https://img.shields.io/badge/Project-Page-4CAF50?logo=googlechrome&logoColor=green)](https://g3t-paper.github.io/)
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2605.27372)
 [![Weights](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Weights-FFD21E)](https://huggingface.co/thatbrguy/g3t)
 
 [Bharath Raj Nagoor Kani](https://bharathrajn.com/), [Noah Snavely](https://www.cs.cornell.edu/~snavely/) <br/>
